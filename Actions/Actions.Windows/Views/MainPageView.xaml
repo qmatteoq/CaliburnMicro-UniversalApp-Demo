@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="Actions.Views.MainPageView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Actions"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:micro="using:Caliburn.Micro"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!--<StackPanel>
+            <Button Content="Double tap me" micro:Message.Attach="[Event DoubleTapped] = [Action ShowMessage]" />
+
+            <ListView ItemsSource="{Binding Movies}"
+                      IsItemClickEnabled="True"
+                      SelectionMode="None"
+                      micro:Message.Attach="[Event ItemClick] = [Action GoToDetail($clickeditem)]">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Title}" Style="{StaticResource BodyTextBlockStyle}" />
+                            <TextBlock Text=" - " Style="{StaticResource BodyTextBlockStyle}" />
+                            <TextBlock Text="{Binding Director}" Style="{StaticResource BodyTextBlockStyle}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackPanel>-->
+        <Hub x:Name="MainHub">
+            <HubSection Header="Prima sezione">
+                <DataTemplate>
+                    <TextBlock Text="{Binding Title}" />
+                </DataTemplate>
+            </HubSection>
+        </Hub>
+
+    </Grid>
+</Page>

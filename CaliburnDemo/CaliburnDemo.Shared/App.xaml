@@ -1,0 +1,8 @@
+﻿<micro:CaliburnApplication
+    x:Class="CaliburnDemo.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CaliburnDemo"
+    xmlns:micro="using:Caliburn.Micro">
+
+</micro:CaliburnApplication>

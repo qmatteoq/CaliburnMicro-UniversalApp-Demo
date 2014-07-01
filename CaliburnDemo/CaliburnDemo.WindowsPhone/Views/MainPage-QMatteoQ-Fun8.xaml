@@ -1,0 +1,39 @@
+﻿<Page
+    x:Class="CaliburnDemo.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CaliburnDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid Margin="12" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <TextBox PlaceholderText="Inserisci il tuo nome..." Width="300" FontSize="26.667"
+                        x:Name="Name" />
+            </StackPanel>
+            <TextBlock Grid.Row="1" Margin="0,20,0,0" FontSize="26.667">
+                <Run Text="Testo inserito:" />
+                <Run Text="{Binding Name}" />
+            </TextBlock>
+            <TextBlock Grid.Row="2" Margin="0,20,0,0" FontSize="32"
+                       x:Name="Greetings" />
+        </Grid>
+    </Grid>
+
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="Accept" Label="Confirm"
+                             x:Name="Confirm" />
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
