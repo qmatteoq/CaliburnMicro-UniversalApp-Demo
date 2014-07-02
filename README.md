@@ -7,3 +7,4 @@ Here is the full list of the posts:
 
 - The project setup: http://wp.qmatteoq.com/using-caliburn-micro-with-universal-windows-app-the-project-setup/
 - Binding and actions: http://wp.qmatteoq.com/using-caliburn-micro-with-universal-windows-app-binding-actions/
+- Navigation: http://wp.qmatteoq.com/using-caliburn-micro-with-universal-windows-app-navigation/
