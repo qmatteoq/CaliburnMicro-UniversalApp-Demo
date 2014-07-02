@@ -11,12 +11,10 @@ namespace Navigation.ViewModels
     public class MainPageViewModel : Screen
     {
         private readonly INavigationService _navigationService;
-        private readonly ILog _log;
 
-        public MainPageViewModel(INavigationService navigationService, ILog log)
+        public MainPageViewModel(INavigationService navigationService)
         {
             _navigationService = navigationService;
-            _log = log;
         }
 
         private ObservableCollection<Movie> movies;
