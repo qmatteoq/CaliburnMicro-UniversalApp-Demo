@@ -5,5 +5,5 @@ This is a set of samples about using Caliburn Micro 2.0 in a Universal Windows a
 
 Here is the full list of the posts:
 
-1) The project setup: http://wp.qmatteoq.com/using-caliburn-micro-with-universal-windows-app-the-project-setup/
-2) Binding and actions: http://wp.qmatteoq.com/using-caliburn-micro-with-universal-windows-app-binding-actions/
+- The project setup: http://wp.qmatteoq.com/using-caliburn-micro-with-universal-windows-app-the-project-setup/
+- Binding and actions: http://wp.qmatteoq.com/using-caliburn-micro-with-universal-windows-app-binding-actions/
