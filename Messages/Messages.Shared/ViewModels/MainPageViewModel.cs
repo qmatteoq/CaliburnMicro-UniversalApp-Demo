@@ -3,10 +3,9 @@ using Messages.Messages;
 
 namespace Messages.ViewModels
 {
-    public class MainPageViewModel: Screen, IHandle<SimpleMessage>
+    public class MainPageViewModel: Screen, IHandle<string>
     {
         private readonly INavigationService _navigationService;
-        private readonly IEventAggregator _eventAggregator;
 
         private string _text;
 
@@ -23,9 +22,8 @@ namespace Messages.ViewModels
         public MainPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
         {
             _navigationService = navigationService;
-            _eventAggregator = eventAggregator;
 
-            _eventAggregator.Subscribe(this);
+            eventAggregator.Subscribe(this);
         }
 
         public void GoToSecondPage()
@@ -36,6 +34,11 @@ namespace Messages.ViewModels
         public void Handle(SimpleMessage message)
         {
             Text = message.Text;
+        }
+
+        public void Handle(string message)
+        {
+            Text = message;
         }
     }
 }

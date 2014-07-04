@@ -16,7 +16,8 @@ namespace Messages.ViewModels
 
         public async void SendMessage()
         {
-            SimpleMessage message = new SimpleMessage("This is a simple message");
+            //SimpleMessage message = new SimpleMessage("This is a simple message");
+            string message = "This is a simple message";
             await _eventAggregator.PublishOnUIThreadAsync(message);
         }
 
