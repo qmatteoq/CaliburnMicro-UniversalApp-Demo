@@ -7,15 +7,15 @@ namespace Messages.ViewModels
     {
         private readonly INavigationService _navigationService;
 
-        private string _text;
+        private string _messageContent;
 
-        public string Text
+        public string MessageContent
         {
-            get { return _text; }
+            get { return _messageContent; }
             set
             {
-                _text = value;
-                NotifyOfPropertyChange(() => Text);
+                _messageContent = value;
+                NotifyOfPropertyChange(() => MessageContent);
             }
         }
 
@@ -33,12 +33,12 @@ namespace Messages.ViewModels
 
         public void Handle(SimpleMessage message)
         {
-            Text = message.Text;
+            MessageContent = message.Text;
         }
 
         public void Handle(string message)
         {
-            Text = message;
+            MessageContent = message;
         }
     }
 }
