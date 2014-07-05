@@ -3,7 +3,7 @@ using Messages.Messages;
 
 namespace Messages.ViewModels
 {
-    public class MainPageViewModel: Screen, IHandle<string>
+    public class MainPageViewModel: Screen, IHandle<string>, IHandle<SimpleMessage>
     {
         private readonly INavigationService _navigationService;
 

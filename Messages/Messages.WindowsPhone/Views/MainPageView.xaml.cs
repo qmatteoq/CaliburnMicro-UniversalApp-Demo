@@ -11,13 +11,19 @@ namespace Messages.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPageView : Page
+    public sealed partial class MainPageView : Page, IHandle<SimpleMessage>
     {
         public MainPageView()
         {
             this.InitializeComponent();
 
             this.NavigationCacheMode = NavigationCacheMode.Required;
+
+            WinRTContainer container = (Application.Current as App).container;
+
+            IEventAggregator eventAggregator = container.GetInstance<IEventAggregator>();
+
+            eventAggregator.Subscribe(this);
         }
 
         /// <summary>
@@ -34,6 +40,11 @@ namespace Messages.Views
             // Windows.Phone.UI.Input.HardwareButtons.BackPressed event.
             // If you are using the NavigationHelper provided by some templates,
             // this event is handled for you.
+        }
+
+        public void Handle(SimpleMessage message)
+        {
+            Text.Text = message.Text;
         }
     }
 }

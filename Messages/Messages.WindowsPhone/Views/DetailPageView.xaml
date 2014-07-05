@@ -29,7 +29,8 @@
 
         <Grid Grid.Row="1" x:Name="ContentRoot" Margin="19,9.5,19,0">
             <StackPanel>
-                <Button Content="Send message" x:Name="SendMessage" />
+                <Button Content="Send string message" x:Name="SendMessage" />
+                <Button Content="Send complex message" x:Name="SendComplexMessage" />
                 <Button Content="Go back" x:Name="GoBack" />
             </StackPanel>
         </Grid>
