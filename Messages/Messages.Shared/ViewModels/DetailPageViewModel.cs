@@ -26,6 +26,18 @@ namespace Messages.ViewModels
             await _eventAggregator.PublishOnUIThreadAsync(message);
         }
 
+        public async void SendSimpleMessageForView()
+        {
+            SimpleMessageForView message = new SimpleMessageForView("This is a message for the view");
+            await _eventAggregator.PublishOnUIThreadAsync(message);
+        }
+
+        public void SendMessageInBackground()
+        {
+            SimpleMessageInBackground message = new SimpleMessageInBackground("This is a message handled in a background thread");
+            _eventAggregator.PublishOnBackgroundThread(message);
+        }
+
         public void GoBack()
         {
             _navigationService.GoBack();

@@ -16,6 +16,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Messages\SimpleMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Messages\SimpleMessageForView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Messages\SimpleMessageInBackground.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DetailPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MainPageViewModel.cs" />
   </ItemGroup>

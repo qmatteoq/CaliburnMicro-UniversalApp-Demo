@@ -31,6 +31,8 @@
             <StackPanel>
                 <Button Content="Send string message" x:Name="SendMessage" />
                 <Button Content="Send complex message" x:Name="SendComplexMessage" />
+                <Button Content="Send message to view" x:Name="SendSimpleMessageForView" />
+                <Button Content="Send message in a background thread" x:Name="SendMessageInBackground" />
                 <Button Content="Go back" x:Name="GoBack" />
             </StackPanel>
         </Grid>
