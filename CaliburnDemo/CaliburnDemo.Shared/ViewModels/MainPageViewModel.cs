@@ -34,7 +34,7 @@ namespace CaliburnDemo.ViewModels
 
         public void Confirm()
         {
-            Greetings = string.Format("Hello, {0}!", name);
+            Greetings = string.Format("Hello, {0}!", Name);
         }
     }
 }

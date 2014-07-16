@@ -13,29 +13,23 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Hub>
-            <HubSection> 
-                <DataTemplate>
-                    <Grid Margin="12" HorizontalAlignment="Center" VerticalAlignment="Top">
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="Auto" />
-                        </Grid.RowDefinitions>
-                        <StackPanel Orientation="Horizontal">
-                            <TextBox PlaceholderText="Inserisci il tuo nome..." Width="300" FontSize="26.667"
+        <Grid Margin="12" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <TextBox PlaceholderText="Inserisci il tuo nome..." Width="300" FontSize="26.667"
                         Text="{Binding Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-                        </StackPanel>
-                        <TextBlock Grid.Row="1" Margin="0,20,0,0" FontSize="26.667">
+            </StackPanel>
+            <TextBlock Grid.Row="1" Margin="0,20,0,0" FontSize="26.667">
                 <Run Text="Testo inserito:" />
                 <Run Text="{Binding Name}" />
-                        </TextBlock>
-                        <TextBlock Grid.Row="2" Margin="0,20,0,0" FontSize="32"
+            </TextBlock>
+            <TextBlock Grid.Row="2" Margin="0,20,0,0" FontSize="32"
                        x:Name="Greetings" />
-                    </Grid>
-                </DataTemplate>
-            </HubSection>
-        </Hub>
+        </Grid>
     </Grid>
 
     <Page.BottomAppBar>
