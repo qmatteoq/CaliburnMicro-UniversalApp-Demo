@@ -39,12 +39,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages.Windows", "Message
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages.WindowsPhone", "Messages\Messages.WindowsPhone\Messages.WindowsPhone.csproj", "{73724007-1D33-4AD6-8973-9B460F2E77BC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignData", "DesignData", "{4A5B29D1-DFF8-4B19-A9FE-0F9B2A5D533F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DesignData", "DesignData", "{C277E5C2-FE5E-439B-9B02-07C75C77EFC3}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "DesignData.Shared", "DesignData\DesignData.Shared\DesignData.Shared.shproj", "{09E6503B-7DA5-413D-ADA4-BFBD63F7ED11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignData.Windows", "DesignData\DesignData.Windows\DesignData.Windows.csproj", "{69828E60-87B6-47A4-86D2-7DC961689164}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignData.WindowsPhone", "DesignData\DesignData.WindowsPhone\DesignData.WindowsPhone.csproj", "{CD65E057-79CE-4E65-B24E-1409B0813472}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		DesignData\DesignData.Shared\DesignData.Shared.projitems*{69828e60-87b6-47a4-86d2-7dc961689164}*SharedItemsImports = 4
 		Actions\Actions.Shared\Actions.Shared.projitems*{791e1d44-5256-4cda-b63e-bd47346cc29f}*SharedItemsImports = 13
+		DesignData\DesignData.Shared\DesignData.Shared.projitems*{cd65e057-79ce-4e65-b24e-1409b0813472}*SharedItemsImports = 4
 		CaliburnDemo\CaliburnDemo.Shared\CaliburnDemo.Shared.projitems*{5e7059fc-5c7e-42f2-bff0-a014ebe84b95}*SharedItemsImports = 4
 		Navigation\Navigation.Shared\Navigation.Shared.projitems*{544393d8-3665-4020-b688-d5a12f5c1e3a}*SharedItemsImports = 4
 		Navigation\Navigation.Shared\Navigation.Shared.projitems*{e583ebcb-1b22-4295-a0d0-36bc0aef1f7b}*SharedItemsImports = 4
+		DesignData\DesignData.Shared\DesignData.Shared.projitems*{09e6503b-7da5-413d-ada4-bfbd63f7ed11}*SharedItemsImports = 13
 		Messages\Messages.Shared\Messages.Shared.projitems*{e31c8eae-71b8-42f7-98b6-5e26a8e8979d}*SharedItemsImports = 4
 		Navigation\Navigation.Shared\Navigation.Shared.projitems*{69284f19-e5e0-41b9-a25e-41ab4700e078}*SharedItemsImports = 13
 		Messages\Messages.Shared\Messages.Shared.projitems*{73724007-1d33-4ad6-8973-9b460f2e77bc}*SharedItemsImports = 4
@@ -241,6 +254,50 @@ Global
 		{73724007-1D33-4AD6-8973-9B460F2E77BC}.Release|x86.ActiveCfg = Release|x86
 		{73724007-1D33-4AD6-8973-9B460F2E77BC}.Release|x86.Build.0 = Release|x86
 		{73724007-1D33-4AD6-8973-9B460F2E77BC}.Release|x86.Deploy.0 = Release|x86
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|ARM.ActiveCfg = Debug|ARM
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|ARM.Build.0 = Debug|ARM
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|ARM.Deploy.0 = Debug|ARM
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|x64.ActiveCfg = Debug|x64
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|x64.Build.0 = Debug|x64
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|x64.Deploy.0 = Debug|x64
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|x86.ActiveCfg = Debug|x86
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|x86.Build.0 = Debug|x86
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Debug|x86.Deploy.0 = Debug|x86
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|ARM.ActiveCfg = Release|ARM
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|ARM.Build.0 = Release|ARM
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|ARM.Deploy.0 = Release|ARM
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|x64.ActiveCfg = Release|x64
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|x64.Build.0 = Release|x64
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|x64.Deploy.0 = Release|x64
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|x86.ActiveCfg = Release|x86
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|x86.Build.0 = Release|x86
+		{69828E60-87B6-47A4-86D2-7DC961689164}.Release|x86.Deploy.0 = Release|x86
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Debug|ARM.ActiveCfg = Debug|ARM
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Debug|ARM.Build.0 = Debug|ARM
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Debug|ARM.Deploy.0 = Debug|ARM
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Debug|x86.ActiveCfg = Debug|x86
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Debug|x86.Build.0 = Debug|x86
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Debug|x86.Deploy.0 = Debug|x86
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Release|ARM.ActiveCfg = Release|ARM
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Release|ARM.Build.0 = Release|ARM
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Release|ARM.Deploy.0 = Release|ARM
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Release|x64.ActiveCfg = Release|Any CPU
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Release|x86.ActiveCfg = Release|x86
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Release|x86.Build.0 = Release|x86
+		{CD65E057-79CE-4E65-B24E-1409B0813472}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -260,5 +317,9 @@ Global
 		{B44B45B3-DA1F-471A-A958-2E4D310739DB} = {B6A06C24-ABC0-4ED8-9E8E-7A4056F8F38A}
 		{E31C8EAE-71B8-42F7-98B6-5E26A8E8979D} = {B6A06C24-ABC0-4ED8-9E8E-7A4056F8F38A}
 		{73724007-1D33-4AD6-8973-9B460F2E77BC} = {B6A06C24-ABC0-4ED8-9E8E-7A4056F8F38A}
+		{C277E5C2-FE5E-439B-9B02-07C75C77EFC3} = {4A5B29D1-DFF8-4B19-A9FE-0F9B2A5D533F}
+		{09E6503B-7DA5-413D-ADA4-BFBD63F7ED11} = {C277E5C2-FE5E-439B-9B02-07C75C77EFC3}
+		{69828E60-87B6-47A4-86D2-7DC961689164} = {C277E5C2-FE5E-439B-9B02-07C75C77EFC3}
+		{CD65E057-79CE-4E65-B24E-1409B0813472} = {C277E5C2-FE5E-439B-9B02-07C75C77EFC3}
 	EndGlobalSection
 EndGlobal
