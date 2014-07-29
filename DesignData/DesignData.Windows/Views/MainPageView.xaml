@@ -5,9 +5,24 @@
     xmlns:local="using:DesignData"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:micro="using:Caliburn.Micro"
+    xmlns:viewModels="using:DesignData.ViewModels"
+    d:DataContext="{d:DesignInstance Type=viewModels:MainPageViewModel, IsDesignTimeCreatable=True}"
+    micro:Bind.AtDesignTime="True"
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid>
+            <ListView ItemsSource="{Binding Path=News}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Path=Title}" Style="{StaticResource TitleTextBlockStyle}" />
+                            <TextBlock Text="{Binding Path=PublishDate}" Style="{StaticResource BodyTextBlockStyle}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </Grid>
 </Page>
